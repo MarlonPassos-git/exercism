@@ -1,17 +1,16 @@
 pub fn fibonacci(n: u32) -> u32 {
-    if n == 0 {
-        return 0;
+    match n {
+        0 => 0,
+        1 => 1,
+        _ => calc_fibonacci(n),
     }
-    if n == 1 {
-        return 1;
-    }
+}
 
+fn calc_fibonacci(n: u32) -> u32 {
     let mut tot = 1;
     let mut previus = 0;
-    let mut index = 1;
 
-    while index < n {
-        index += 1;
+    for _ in 1..n {
         let old_tot = tot;
         tot += previus;
         previus = old_tot;
