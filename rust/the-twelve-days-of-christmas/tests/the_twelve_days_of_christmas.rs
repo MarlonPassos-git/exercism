@@ -1,7 +1,7 @@
-use ::the_twelve_days_of_christmas::the_twelve_days_of_christmas;
+use ::the_twelve_days_of_christmas::the_twelve_days_of_chrisms;
 
 #[test]
-fn test_generate_twelve_days_of_christmas() {
+fn test_generate_twelve_days_of_chrisms() {
     let expected_song = "On the first day of Christmas,\nmy true love sent to me\nA partridge in a pear tree.\n\n\
                              On the second day of Christmas,\nmy true love sent to me\nTwo turtle doves,\n\
                              And a partridge in a pear tree.\n\n\
@@ -36,5 +36,5 @@ fn test_generate_twelve_days_of_christmas() {
                              Seven swans a-swimming,\nSix geese a-laying,\nFive golden rings,\nFour calling birds,\n\
                              Three French hens,\nTwo turtle doves,\nAnd a partridge in a pear tree!\n";
 
-    assert_eq!(the_twelve_days_of_christmas(), expected_song);
+    assert_eq!(the_twelve_days_of_chrisms(), expected_song);
 }

@@ -17,19 +17,14 @@ const MIDDLE_SENTENCES: [&str; 11] = [
     "Two turtle doves,",
 ];
 
-pub fn test() {
-    let b = get_middle_part_of_letter("twelfth");
-    println!("{b}");
-}
-
-pub fn the_twelve_days_of_christmas() -> String {
+pub fn the_twelve_days_of_chrisms() -> String {
     let mut text = String::new();
 
     for ordinal_number in NUMBERS {
-        let initial_sentences = get_initial_part_of_letter(ordinal_number);
-        let end_sentence = get_final_part_of_letter(ordinal_number);
-        let middle_sentences = get_middle_part_of_letter(ordinal_number);
-        text = format!("{text}{initial_sentences}{middle_sentences}{end_sentence}");
+        // aqui parece que estou usando o & pois estou convertendo String to &str
+        text.push_str(&get_initial_part_of_letter(ordinal_number));
+        text.push_str(&get_middle_part_of_letter(ordinal_number));
+        text.push_str(&get_final_part_of_letter(ordinal_number));
     }
 
     return text;

@@ -1,7 +1,8 @@
-use the_twelve_days_of_christmas::*;
+fn print_greeting(greeting: &str) {
+    println!("{}", greeting);
+}
 
 fn main() {
-    let text = the_twelve_days_of_christmas();
-
-    println!("{text}")
+    let hello = String::new();
+    print_greeting(&hello); // Passamos uma referência &str como argumento.
 }
