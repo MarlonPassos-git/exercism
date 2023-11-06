@@ -2,10 +2,12 @@
 
 main() {
   if [ -z "$1" ]; then
-    echo "One for you, one for me."
+    subject="you"
   else
-    echo "One for $1, one for me."
+    subject=$1
   fi
+
+  echo "One for $subject, one for me."
 }
 
 main "$@"
