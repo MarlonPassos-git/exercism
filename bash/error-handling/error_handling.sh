@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  if [ $# != 1 ]; then
+  if [ $# -ne 1 ]; then
     echo "Usage: $0 <person>"
     exit 1
   fi
