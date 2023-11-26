@@ -13,9 +13,12 @@
     "ghcr.io/devcontainers/features/common-utils": {
       "installZsh": true
     },
-		"ghcr.io/devcontainers-contrib/features/exercism-cli": {},
+		"ghcr.io/devcontainers-contrib/features/exercism-cli": {
+
+		},
 		"ghcr.io/edouard-lopez/devcontainer-features/bats": {}
   },
+	"postCreateCommand": "exercism configure -w /workspaces/exercism",	
 	"customizations": {
 		"vscode": {
 			"extensions": [

@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 
 main() {
-  if [ -z "$1" ]; then
-    subject="you"
-  else
-    subject=$1
-  fi
+  subject=${1:-"you"}
 
   echo "One for $subject, one for me."
 }
